@@ -1,4 +1,5 @@
 import { Counter } from "./components/Counter";
+import { User } from "./components/User";
 import "./sass/site.scss";
 function App() {
 	return (
@@ -6,6 +7,7 @@ function App() {
 			<h1>React + Typescript</h1>
 			<hr />
 			<Counter />
+			<User />
 		</>
 	);
 }
