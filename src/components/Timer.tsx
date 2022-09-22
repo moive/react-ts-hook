@@ -7,7 +7,7 @@ type TypeTimer = {
 export const Timer = ({ millisecond }: TypeTimer) => {
 	const [second, setSecond] = useState(0);
 	const ref = useRef<number>();
-	console.log(millisecond);
+	// console.log(millisecond);
 	useEffect(() => {
 		ref.current && clearInterval(ref.current);
 		ref.current = setInterval(() => setSecond((s) => s + 1), millisecond);
